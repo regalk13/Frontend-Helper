@@ -1,0 +1,35 @@
+* {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 5px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+img:nth-child(6){
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+img:nth-child(12){
+    grid-column: span 3;
+}
